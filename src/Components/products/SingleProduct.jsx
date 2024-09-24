@@ -21,8 +21,8 @@ export default function SingleProduct(props) {
   return (
     <Link to={ROUTES.SINGLE_PRODUCTS.DYNAMIC(product.bookId)}>
       <div className="bg-white p-3 shadow rounded border border-red-100 space-y-4 relative">
-        <span className="absolute top-0 right-0 bg-gray-400 p-1 rounded">
-          10%
+        <span className="absolute top-0 right-0 bg-orange-500 p-1 rounded">
+          {product?.rating}
         </span>
         <div className="bg-gray-100">
           <img className="object-cover w-full h-30 md:h-40"
@@ -31,13 +31,13 @@ export default function SingleProduct(props) {
           />
         </div>
         <h1 clzzassName="text-xl font-bold" title={product?.bookName}><b>Book Name: </b>
-          {product?.bookName.slice(0, 30)}
+          {product?.bookName.slice(0, 20)}
         </h1>
         <p className="text-sm"><b>Category: </b>{product?.category}</p>
         <p className="text-sm"><b>Author: </b>{product?.author}</p>
         <p className="text-sm"><b>Tags: </b>{product?.tags}</p>
         <p className="text-sm"><b>Rating: </b>{product?.rating}/5</p>
-        <button type="button" onClick={() => handleSeeDetails(product.bookId)} className="bg-orange-900 rounded px-3 text-white py-2">
+        <button type="button" onClick={() => handleSeeDetails(product.bookId)} className="bg-orange-400 rounded px-3 text-white py-2">
           Book Details
         </button>
         
