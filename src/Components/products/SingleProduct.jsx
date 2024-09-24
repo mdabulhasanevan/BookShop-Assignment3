@@ -30,7 +30,7 @@ export default function SingleProduct(props) {
             alt=""
           />
         </div>
-        <h1 clzzassName="text-xl font-bold" title={product?.bookName}><b>Book Name: </b>
+        <h1 className="text-xl font-bold" title={product?.bookName}><b>Book Name: </b>
           {product?.bookName.slice(0, 20)}
         </h1>
         <p className="text-sm"><b>Category: </b>{product?.category}</p>
