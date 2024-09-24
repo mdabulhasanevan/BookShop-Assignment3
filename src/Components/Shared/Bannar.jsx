@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Bannar() {
   return (
@@ -11,7 +12,7 @@ export default function Bannar() {
     <p className="py-6"> Unlock a World of Stories – Find Your Next Favorite Book at
       </p>
       <h3 className="text-5xl font-bold">BookShop</h3> <br></br>
-      <button className="btn btn-primary">Buy Book</button>
+      <Link to={"/invalid-link"}><button className="btn btn-primary">Buy Book</button></Link>
     </div>
   </div>
 </div>

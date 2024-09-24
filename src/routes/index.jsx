@@ -4,6 +4,8 @@ export const ROUTES = {
     FAQ: "/FAQ",
     About: "/About",
     Blog: "/Blog",
+    NotFoundPage: "/NotFoundPage",
+    
     
     SINGLE_PRODUCTS: {
       STATIC: "/product/:productId",

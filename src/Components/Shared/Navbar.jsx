@@ -34,7 +34,7 @@ export default function Navbar() {
        
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">BookShop</a>
+    <Link to={ROUTES.HOME} className="btn btn-ghost text-xl">BookShop</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -45,8 +45,8 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn m-2">Buy Book</a>
-    <a className="btn">Signin</a>
+  <Link className="p-3 m-3 border-2 bg-red-200" to={"/invalid-link"}>Buy Book</Link>
+  <Link className="p-3 m-3 border-2 bg-blue-400" to={"/invalid-link"}>Sign in</Link>
   </div>
 </div>
   )

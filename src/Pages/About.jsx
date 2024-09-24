@@ -4,7 +4,7 @@ import Footer from './../Components/Shared/Footer';
 
 export default function About() {
   return (
-    <div>
+    <div className="w-3/4 mx-auto">
     <Navbar/>
     <div>About</div>
     <Footer/>

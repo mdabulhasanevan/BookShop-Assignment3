@@ -7,6 +7,7 @@ import Homepage from "../pages/HomePage";
 import FAQ from './../pages/FAQ';
 import About from './../pages/About';
 import Blog from './../pages/Blog';
+import NotFoundPage from './../pages/NotFoundPage';
 
 const router = createBrowserRouter([
   {
@@ -29,8 +30,11 @@ const router = createBrowserRouter([
         path: `${ROUTES.Blog}`,
         element: <Blog/>,
       },
+      { 
+        path:"*" ,
+        element:<NotFoundPage/>
 
-      
+      },
       {
         path: `${ROUTES.PRODUCTS}`,
         element: <ProductsPage />,

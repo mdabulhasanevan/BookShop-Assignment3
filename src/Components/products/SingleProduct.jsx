@@ -25,18 +25,18 @@ export default function SingleProduct(props) {
           10%
         </span>
         <div className="bg-gray-100">
-          <img className="w-30"
+          <img className="object-cover w-full h-30 md:h-40"
             src={`${product.image}`}
             alt=""
           />
         </div>
-        <h3 className="text-xs font-semibold" title={product?.bookName}>
-          {product?.bookName.slice(0, 40)}
-        </h3>
-        <p className="text-sm">{product?.category}</p>
-        <p className="text-sm">{product?.author}</p>
-        <p className="text-sm">{product?.tags}</p>
-        <p className="text-sm">{product?.publisher}</p>
+        <h1 clzzassName="text-xl font-bold" title={product?.bookName}><b>Book Name: </b>
+          {product?.bookName.slice(0, 30)}
+        </h1>
+        <p className="text-sm"><b>Category: </b>{product?.category}</p>
+        <p className="text-sm"><b>Author: </b>{product?.author}</p>
+        <p className="text-sm"><b>Tags: </b>{product?.tags}</p>
+        <p className="text-sm"><b>Rating: </b>{product?.rating}/5</p>
         <button type="button" onClick={() => handleSeeDetails(product.bookId)} className="bg-orange-900 rounded px-3 text-white py-2">
           Book Details
         </button>
